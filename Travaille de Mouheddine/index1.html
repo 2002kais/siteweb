@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Décoration Mouheddine</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Ajout des styles spécifiques pour la section Contact */
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.contact ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.contact ul li a {
+  color: #1e3c72;
+  text-decoration: none;
+}
+
+.contact ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Liens généraux */
+a {
+  color: #1e3c72;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Décoration Mouheddine</h1>
+    <p>10 ans d'expertise dans la décoration de plafonds</p>
+    <a href="#contact" class="btn-primary">Demander un devis</a>
+  </header>
+  <script>
+    // Simple scroll to sections
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+  </script>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>À propos de nous</h2>
+    <p>Avec plus de 10 ans d'expérience, Décoration Mouheddine offre des designs modernes et classiques pour vos plafonds. Nous sommes situés à Menzel Temime, Nabeul, Tunisie. Nous proposons des services sur mesure pour répondre à tous vos besoins en décoration intérieure.</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>Nos réalisations</h2>
+    <div class="gallery-grid">
+      <img src="IMG_6412.JPG" alt="Plafond moderne 1">
+      <img src="IMG_6354.JPG" alt="Plafond moderne 2">
+      <img src="IMG_6357.JPG" alt="Plafond moderne 3">
+      <img src="IMG_6359.JPG" alt="Plafond moderne 4">
+      <img src="IMG_6367.JPG" alt="Plafond moderne 5">
+      <img src="IMG_6374.JPG" alt="Plafond moderne 6">
+      <img src="IMG_6390.JPG" alt="Plafond moderne 7">
+      <img src="IMG_6394.JPG" alt="Plafond moderne 8">
+      <img src="IMG_6399.JPG" alt="Plafond moderne 9">
+      <img src="IMG_6404.JPG" alt="Plafond moderne 10">
+      <img src="IMG_6411.JPG" alt="Plafond moderne 11">
+      <img src="IMG_6413.JPG" alt="Plafond moderne 12">
+      <img src="IMG_6398.JPG" alt="Plafond en cours de réalisation">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Nos services</h2>
+    <ul>
+      <li>Création de faux plafonds suspendus avec éclairage LED.</li>
+      <li>Réalisation sur mesure adaptée à vos besoins.</li>
+      <li>Réparation et rénovation de plafonds.</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contactez-nous</h2>
+    <p>Besoin de plus d'informations ou d'un devis ? Voici comment nous joindre :</p>
+    <ul>
+      <li><strong>Adresse :</strong> Menzel Temime, Nabeul, Tunisie</li>
+      <li><strong>Téléphone :</strong> <a href="tel:+21621127385">+216 21 127 385</a></li>
+      <li><strong>Email :</strong> <a href="mailto:decorationmouheddine@gmail.com">decorationmouheddine@gmail.com</a></li>
+    </ul>
+    <form>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 Décoration Mouheddine | Menzel Temime, Nabeul, Tunisie</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
